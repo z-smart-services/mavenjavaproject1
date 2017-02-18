@@ -65,11 +65,12 @@ public class CompteFacadeTest {
     @org.junit.Test
     public void testFind() {
         System.out.println("find");
-        Compte compte = new Compte("id2", 200d);
+        Compte compte = new Compte("id0", 200d);
         CompteFacade instance = new CompteFacade();
-        Compte expResult = new Compte("id2");
+        Compte expResult = new Compte("id0");
         Compte result = instance.find(comptes, compte);
         assertEquals(expResult, result);
+        System.out.println("risking method");
         // TODO review the generated test code and remove the default call to fail.
     }
 
